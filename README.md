@@ -50,6 +50,18 @@ Six tables, defined in [`database/schema.sql`](database/schema.sql) with sample 
 | `Assignments` | Assignments belonging to a course, with a due date |
 | `Submissions` | One row per student per assignment (`UNIQUE`), holding file path and grade |
 
+## Where this came from
+
+First-year coursework, second semester (early 2025). The assignment was to take a system from
+requirements through design and into a working implementation backed by a real database, which is why
+the app is split into forms for presentation and manager classes for data access rather than a single
+layer doing both.
+
+![Database schema](database/schema-preview.png)
+
+The diagram is generated from [`database/schema.sql`](database/schema.sql) itself rather than drawn by
+hand, so the columns, keys and constraints in it are what the DDL actually declares.
+
 ## Running it
 
 ```bash
